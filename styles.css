@@ -1,0 +1,1240 @@
+/* all the page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body, html {
+  height: 100%;
+  /* background-color: white; */
+}
+
+
+/* Header CSS */
+.background { 
+  height: 100vh; /* full screen */
+  background-image: url('Resimler/hero-man.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute; /*for fix on top*/
+  top: 0; 
+  left: 0;
+  width: 100%;
+  padding: 10 20px;
+  height: 80px;
+  background-color: transparent; 
+  transition: background-color 0.3s ease; 
+  z-index: 1000; 
+} 
+
+
+.navbar.navbar-scroll {
+  background-color: #355592;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 300px; 
+  margin-right: 150px; 
+}
+
+.logo img {
+  width: 200px;
+  height: 50px;
+}
+
+ .nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+  margin-left: auto; 
+  margin-right: 350px; 
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 10px;
+
+}
+
+.join-us { /* it's on navbar button*/
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+}
+
+/* Hamburger menü başlangıçta gizli */
+.navbar-toggler {
+  display: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+/* Content Section */
+.content {
+  position: absolute; /* for go on the photo */
+  top: 30%; 
+  left: 10%; 
+  color: white;
+  max-width: 800px; 
+}
+
+.content .powerfull-btn {
+  background-color: #355592;
+  color: white;
+  font-size: 16px;
+  padding: 5px 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 2px;
+}
+
+.content h1 {
+  color: white;
+  font-size: 4rem; 
+  margin-bottom: 20px;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+.content p {
+  color: white;
+  font-size: 22px;
+}
+
+.sign-up, .details {
+  background-color: #355592;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px 15px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.details {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Card Section */
+#card1{  /*course*/
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  /* margin: 10px; */
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 200px;
+    /* margin-right: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#card2{   /*work out*/
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  /* margin: 10px; */
+  margin-bottom: 30px;
+  margin-top: 30px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#card3{ /*Working Hour*/
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  /* margin: 10px; */
+  margin-bottom: 30px;
+  margin-top: 30px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#card4{ /*Happy Client*/
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  /* margin: 10px; */
+    margin-bottom: 30px;
+    margin-top: 30px;
+    /* margin-left: 100px; */
+    margin-right: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.column{
+  display:flex;
+  justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+  background-color: aliceblue;
+}
+ 
+
+.text1 {
+  font-size: x-large; 
+  color: #355592;
+}
+
+.text2 {
+  font-size: x-large;
+  color: #000;
+}
+
+/*
+/*second container*/
+#first-title{ /* for the our classes */
+  font-size:x-large;
+  text-align: center;
+  color: #355592;
+  padding-top: 5rem;
+  /* background-color: whitesmoke; */
+
+} 
+
+#first-article{ /* for the text under the our classes */
+  margin-top: 3rem;
+  text-align: center;
+  color: #555555;
+  line-height: 1.5rem;
+}
+
+
+.box{
+ 
+  width: 75px;
+  height: 7px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  position: absolute;
+  margin-top: 1.5rem;
+  left: 47%;
+  right: 53%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+
+.options-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  box-sizing: border-box;
+  margin-left: 20%;
+  
+}
+
+
+.btn{
+  color: #fff;
+  width: auto;
+  height: auto;
+  background-color:#355592;
+  box-sizing: border-box;
+  float: left;
+  justify-content: center;
+  margin: 60px;
+  align-items: center;
+  font-size: medium;
+  padding:10px 20px;
+  text-align: center;
+  border-radius: 4px;
+
+}
+
+.btn:hover{
+  background-color: orange;
+  color: white;
+}
+
+
+.yoga-page-container{
+display: flex;
+flex-direction: row;
+margin-top: 1rem;
+margin-bottom: 1rem;
+text-align: left  ;
+box-sizing: border-box;
+width: auto;
+height: auto;
+}
+
+.yoga-text-card {
+width: auto;
+height: auto;
+display: inline;
+align-items: start;
+flex-direction: row;
+margin-left: 14rem;
+margin-right: 14rem;
+color: #555555;
+line-height: 1.5rem;
+float: left;
+}
+
+.yoga-text-card h2{
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+#yogaimage{
+margin-top: 50px;
+margin-bottom: 10px;
+float: right;
+object-fit: cover;
+width: 90%;
+height: 75%;
+margin-right: 12rem;  
+
+}
+
+/*  BMI Calculator Section */
+.bmi {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 20%;
+}
+
+.bmi-content {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.bmi-text h1 {
+  color: var(--background-main);
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.bmi-text p {
+  color: var(--text-color-black);
+  font-size: 1rem;
+  padding: 1% 0%;
+}
+.bmi-calculator {
+  margin-top: 10px;
+}
+
+.bmi-calculator input, .bmi-calculator button {
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  font-size: 1rem;
+}
+
+
+.bmi-img {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bmi-img img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  z-index: -1;
+}
+
+.bmi-img p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.bmi-arrow {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid orange;
+  /* transform: translateX(-50%); */
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+/* forth container */
+#second-title{ /* for the our best trainers */
+font-size:x-large;
+text-align: center;
+color: #355592;
+/* background-color: white; */
+padding-top: 5rem;
+} 
+
+#second-article{ /* for the text under the our classes */
+margin-top: 3rem;
+text-align: center;
+color: #555555;
+line-height: 1.5rem;
+}
+
+.trainers-container {
+  display: flex;
+  justify-content: space-between; /* to gap between picture */
+  margin: 1rem 150px;
+  padding: 30px;
+  box-sizing: border-box;
+  gap: 30px; /* to gap between fixed picture */
+  
+}
+
+
+
+.trainer-card{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  overflow: hidden;
+  border: 3px solid orange;
+}
+
+.trainer-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:transform 0.3s ease;
+  display: block;
+  position: relative;
+  border: 2px solid var(--hover-color);
+  z-index: 2;
+}
+
+.trainer-card:hover img {
+  transform: scale(1.05); /* the img size increasing on hover  */
+}
+
+
+.trainer-card::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 108%;
+  height: 40%;
+  background-color: var(--background-main);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 0.5s;
+}
+
+.trainer-card::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 90%;
+  background-color: var(--background-main);
+  transform: translate(-50%, -40%);
+  z-index: 1;
+  transition: all 1s;
+}
+
+.hover-info {
+  position: absolute;
+  bottom: 0;
+  width: 70%;
+  margin: 10px 10px 10px 40px;
+  background-color:#355592; /* blue transparent background */
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0; /* hidden in the beginning */
+  transform: translateY(100%);
+  transition: all 0.3s ease; /* soft cross */
+  z-index: 1;
+  border-radius: 8px;
+}
+
+
+
+.trainer-card:hover .hover-info {
+  opacity: 1; 
+  transform: translateY(0);
+}
+
+
+.trainer-card:hover img {
+  z-index: 1; /* hover-info in seeing in front of all */
+}
+
+.six-container{
+  display: flex;
+  justify-content: space-between; 
+  margin: 1rem 150px;
+  padding: 30px;
+  box-sizing: border-box;
+  gap: 30px; 
+ 
+}
+
+
+.shopping-card{
+
+width: 230px;
+height: 400px;
+margin-right: 10px;
+border-radius: 4px;
+float: left;
+margin-top: 3rem;
+display: block;
+background-color:#fff;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+
+
+}
+
+.shp-img .image{
+object-fit: cover;
+width: 14.4rem;
+height: 20rem;
+border-radius: 4px 0px;
+margin-right: 1rem;
+
+}
+.seven-container{
+  margin-left:17%;
+  margin-right: 15%;
+  margin-top: 10%;
+  display: block;
+  clear: both;
+  }
+
+
+#review{
+  background-color: aliceblue;
+}
+.review2 {
+display: flex;
+justify-content: space-around;  
+}
+
+.review-item {
+text-align: center;
+
+}
+
+.review-img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+
+h6 {
+margin:5px;
+color: #555555;
+}
+
+.review-box {
+background-color: #355592; /* box bg-color */
+color: white;
+padding: 20px 15px;
+position: relative; /* for the with work  ::after */
+width: 400px; /* kutu genişliği */
+text-align: left;
+}
+
+
+.review-box::before {
+content: '';
+position: absolute;
+bottom: -30px; 
+left: 0; /* fixed left */
+border-width: 30px 30px 0 0; 
+border-style: solid;
+border-color: #6a91b3 transparent transparent transparent; 
+transform: rotate(90deg);
+
+}
+
+
+.review-box::after {
+content: '';
+position: absolute;
+bottom: -30px; 
+right: 0; /* fixed right */
+border-width: 30px 0 0 30px; 
+border-style: solid;
+border-color: #6a91b3 transparent transparent transparent; 
+transform: rotate(-90deg); 
+}
+
+.mobile-info{
+float: left;
+margin-right: 5rem;
+}
+
+/* Kcontainer Flex  */
+
+.contact-container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin-left: 14rem;
+margin-top: 3rem;
+
+}
+
+
+.contact {
+width: 40%;
+}
+
+/* map width */
+.map {
+width: 55%; 
+}
+
+/* İframe style */
+iframe {
+width: 60%;
+height: 350px;
+border: 0;
+}
+footer {
+background-color:#355592; /* bg-color */
+color: white;
+padding: 20px 0;
+margin-top: 50px;
+}
+
+.footer-container {
+display: flex;
+flex-direction: column;
+align-items: start;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.footer-logo {
+text-align: start;
+margin-bottom: 25px;
+}
+
+
+
+.footer-logo p {
+font-size: 14px;
+line-height: 1.5;
+max-width: auto; /* text-width */
+}
+
+.footer-links {
+display: flex;
+justify-content: space-between;
+width: 100%;
+max-width: 800px;
+margin-left: 300px;
+}
+
+.footer-section {
+flex: 1;
+text-align: left;
+}
+
+.footer-section h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.footer-section ul {
+list-style-type: none;
+padding: 0;
+font-size: 12px;
+}
+
+.footer-section ul li {
+margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+color: white;
+text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+text-decoration: underline;
+}
+
+input {
+padding: 10px;
+margin: 10px 0;
+width: 100%;
+max-width: 300px;
+box-sizing: border-box;
+}
+
+button {
+padding: 10px;
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #45a049;
+}
+
+.result {
+margin-top: 20px;
+}
+
+#home{ /* for the viewing on the page*/
+  background-color: #fff;
+}
+#classes{
+  background-color: #fff;
+}
+#trainers{
+  background-color:aliceblue;
+}
+
+#purchaseFromUs{
+  background-color: #fff;;
+}
+#review{
+  background-color: aliceblue;
+}
+#contact{
+  background-color: #fff;
+}
+ /* responsive desing*/
+@media screen and (max-width: 576px) { 
+    .navbar{
+      /* display: block; */
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
+    /* Hamburger menü görünür yapılıyor */
+  .navbar-toggler {
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+  }
+
+
+    /* Menü başlangıçta gizli, açıldığında görünür */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Navbar yüksekliği kadar üstten bırak */
+    left: 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Menü elemanları dikey olarak sıralanır */
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .join-us {
+    width: 100%;
+    text-align: center;
+  }
+
+  
+    /* .join-us {
+      display: block;
+      bottom: 60px;
+    }
+  
+  
+    .join-us::after,
+    .join-us::before {
+      display: block;
+    }
+  */
+    /* .nav-links {
+      display: none;
+    } 
+   */
+    /* .mobile-nav {
+      display: flex;
+    } */
+  
+    .content {
+      padding-top: 50%;
+    }
+  
+    .our-classes {
+      max-width: 100vh;
+    }
+  
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 30px;
+    }
+  .background{
+    width: 100%; 
+    margin: 1%;
+    display: block;
+  
+
+  }
+  .navbar{
+    width: 100%;  
+    margin: 1%;
+  }
+
+  .content{
+    width: 100%;  
+    margin: 1%;
+    display: block;
+  }
+
+  .content h1{
+    width: 100%;  
+    margin: 1%;
+    display: block  
+
+  }
+
+  .content p{
+    width: 100%;  
+    margin: 1%;
+    display: block;
+    font-size: small;
+
+  }
+
+  .sign-up{
+    width: 20%;  
+    margin: 1%;
+    display: block;
+  }
+
+  .details{
+    width: 20%;  
+    margin: 1%;
+    display: block;
+  }
+
+  .row {
+    width: 100%;
+    margin: 1%;
+    display: block;
+    padding-top: 3px;
+  
+  }
+  .column {
+    width: 100%;
+    margin: 1%;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    
+  }
+
+  #card1,
+  #card2,
+  #card3,
+  #card4{
+    width:200px;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3px;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-container {
+    width: 100%;
+    margin: 1%;
+    display: block;
+  
+  }
+
+  #first-title{
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    display: block;
+    text-align: center;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .box {
+    width: 30px;
+    height: 7px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    position: absolute;
+    margin-top: 1px;
+    left: 47%;
+    right: 53%;
+    display: flex;
+    flex-direction: row;
+    display: block;
+  }
+
+  #first-article{
+    width: 70%;
+    height: auto;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+  }
+
+
+  .options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .options-container > div {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  /* Yoga ve Group buttons  */
+  #opt1, #opt2 {
+    grid-column: span 1;
+  }
+
+ 
+  #opt3, #opt4 {
+    grid-column: span 1;
+  }
+
+  .yoga-page-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+    
+  }
+  .yoga-text-card{
+    width: 100%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+    display: block;
+  }
+
+  .yoga-text-card h2{
+    width: 100%;
+    margin-left: 3%;
+    display: block;
+    margin-top: 5%;
+  }
+
+  .yoga-text-card p{
+    width: 90%;
+    margin: 1%;
+    display: block;
+  }
+
+  #yogaimage{
+    width: 90%; 
+    height: 90%;
+    margin: 1%;
+
+    }
+
+  .thirth-container {
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+
+  .BMI-img-card{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+
+  .BMI-img-card .BMI-img{
+    width: 100%; 
+    height: 100%;
+    margin: 1%;
+
+    } */
+
+  .forth-container {
+    width: 100%;
+    margin: 1%;
+    display: block;
+  
+  }
+
+  #second-article{
+    width: 70%;
+    height: auto;
+    margin-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+  }
+
+  #second-title{
+    width: 100%;
+    margin: 1%;
+    display: block;
+    text-align: center;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .fifth-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+    background-color: #fff;
+  }
+
+  .trainers-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+    align-items: center;
+   
+   
+  }
+
+  .trainer-card{
+    width: 70%;
+    height: 90%;
+    margin: 1%;
+    display: block;
+    margin-left: 4.5rem;
+    border: 3px solid orange;
+    margin-bottom: 1rem;
+  }
+  
+  .trainer-card img{
+
+    object-fit: cover;
+    transition: transform 0.3s ease;
+   
+  
+  }
+  .shp-img .image{
+    object-fit: cover;
+    width: 70%;
+    height: 90%;
+    border-radius: 4px 0px;
+    margin-left: 4.5rem;
+    
+  }
+
+  .fifth-container {
+    width: 100%;
+    margin: 1%;
+    display: block;
+    background-color: #fff;
+  }
+
+  .six-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+    background-color: #fff;
+  }
+  .shopping-card{
+    width: 100%;
+    height: 95%;
+    border-radius: 8px;
+    margin-bottom: 2%;
+  }
+
+  .seven-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+
+  .review2{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+  .review-item{
+    width: 100%;
+    margin: 5%;
+    display: block;
+    text-align:left;
+
+  }
+
+  .review-box{
+    width: 85%;
+    margin: 2%;
+    display: block;
+    text-align:center;
+
+  }
+
+  .section8-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+  .contact-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+  .contact{
+    width: 100%;
+    margin: 1%;
+    display: block;
+    margin-left: 1rem;
+  }
+
+  .contact info{
+    width: 100%;
+    margin: 5%;
+    display: block;
+    margin-left: 20rem;
+  }
+
+  .mobil-info{
+    width: 100%;
+    margin-right: 2rem;
+    display: block;
+    
+  }
+
+  .mail-info mail{
+    width: 40%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: block;
+    
+  }
+
+  .mail-info mail-info2{
+    width: 40%;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: block;
+    
+  }
+
+  .form{
+    width: 90%;
+    margin: 1%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .map{
+    width: 150%;
+    margin: 1%;
+    margin-left: 1rem;
+    display: block;
+
+  }
+  .footer-container{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+  .footer-logo{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+  .footer-links{
+    width: 100%;
+    margin: 1%;
+    display: block;
+  }
+  .footer-section{
+    width: 45%;
+    margin: 1%;
+    display: inline-block;
+  }
+  
+
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+  
+<body>
+
+    <!-- Home page -->
+    <section id="home">
+        <div class="background">
+            <nav class="navbar">
+                <div class="logo">
+                <img src="Resimler/logo.png" alt="Logo">
+                </div>
+                <button class="navbar-toggler" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links">
+                <li><a class="Home" href="#home">Home</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#trainers">Trainers</a></li>
+                <li><a href="#review">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button class="join-us">JOIN US</button></li>
+                </ul>
+            </nav>
+        </div>
+    
+        <div class="content">
+            <button class="powerfull-btn">POWERFULL</button>
+            <h1>Group<br>Practice<br>with Trainer</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam unde, facilis tenetur nemo explicabo fuga ducimus beatae placeat exercitationem eligendi tempora modi nulla corporis aspernatur iusto nihil omnis ratione!</p>
+            <button class="sign-up">Sign Up</button>
+            <button class="details">Details</button>
+        </div>
+    
+          <!-- Home page -->
+    
+
+
+    <!--Card-->
+        <div class="row">
+            <div class="column">
+                <div id="card1"> 
+                    <p class="text1" style="font-size: x-large; 
+                    color: #355592;"><b>325</b></p>
+                    <p class="text2">Course</p>
+                </div>
+                <div id="card2">
+                    <p class="text1" style="font-size: x-large; 
+                    color: #355592;">405</p>
+                    <p class="text2">Work Out</p>
+                </div>
+                <div id="card3">
+                    <p class="text1" style="font-size: x-large; 
+                    color: #355592;">305</p>
+                    <p class="text2">Working Hour</p>
+                </div>
+                <div id="card4">
+                    <p class="text1" style="font-size: x-large; 
+                    color: #355592;">705</p>
+                    <p class="text2"><b>Happy Client</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--classes part-->
+    <section id="classes">
+        <div class="second-container">
+            <div id="first-title">
+                <h1>OUR CLASSES</h1>
+            </div>
+            <div class="box"></div> <!--orange line/box-->
+            <div id="first-article">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempore <br>
+                assumenda dignissimos deserunt alias fuga.</p>  
+            </div>
+            <div class="options-container">
+                <div id="opt1"> 
+                    <button class="btn" onclick="changeImage('Resimler/yoga.jpg')">Yoga</button>
+                </div>
+                <div id="opt2">
+                    <button class="btn" onclick="changeImage('Resimler/group.webp')">Group</button>
+                </div>
+                <div id="opt3">
+                    <button class="btn" onclick="changeImage('Resimler/solo.jpg')">Solo</button>
+                </div>
+                <div id="opt4">
+                    <button class="btn" onclick="changeImage('Resimler/stret.webp')">Stretching</button>
+                </div>
+            </div>
+                            
+            <div class="yoga-page-container"> 
+                <div class="yoga-text-card">
+                        <h2>Why are your Yoga?</h2>
+                        
+                        <p style="color:#555555;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ullam illo,  
+                        accusantium voluptate corrupti officiis voluptatem non asperiores quo nostrum   
+                        neque, facilis ipsam! Quia a quaerat blanditiis,  
+                        repellendus officia inventore!</p>
+                        
+                        <h2>When comes Yoga Your Time.</h2>
+                        <br>
+                        <p>Saturday-Sunday: 8:00am - 10.00am</p>
+                        <br>
+                        <p>Monday-Tuesday: 10:00am - 12:00pm</p>
+                        <br>
+                        <p>Wednesday-Friday: 3:00pm - 6:00pm</p>
+                        <br>
+                </div>
+                <div>
+                    <img id="yogaimage" src="Resimler/yoga.jpg" alt="Selected Class Image" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- BMI Calculator Section-->
+  <section class="bmi">
+    <div class="bmi-content">
+        <div class="bmi-text">
+            <h1>BMI CALCULATOR</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply
+                random text. It has roots in a piece of classical Latin
+                literature from 45 BC, making it over 2000 years old.
+            </p>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply
+                random text. It has roots in a piece of classical Latin
+                literature from 45 BC, making it over 2000 years old.
+            </p>
+        </div>
+        <div class="bmi-calculator">
+            <input type="number" id="height" placeholder="Your Height (cm)">
+            <input type="number" id="weight" placeholder="Your Weight (kg)">
+            <button onclick="calculateBMI()">Calculate BMI</button>
+        </div>
+    </div>
+    <div class="bmi-img">
+        <p id="result"></p>
+        <img src="Resimler/bmi-index.jpg" alt="">
+        <div id="bmi-arrow" class="bmi-arrow"></div>
+    </div>
+</section>
+    <!--page3-->
+    <section id="trainers">
+        <div class="forth-container" style="background-color: aliceblue;">
+            <h1 id="second-title">OUR BEST TRAINERS</h1>
+            <div class="box"></div> <!--orange line/box--> 
+            <p id="second-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempore <br>
+                assumenda dignissimos deserunt alias fuga.</p>  
+            
+            <div class="trainers-container">
+                <div class="trainer-card">
+                    <div class="top-bar"></div>
+                    <img class="trainer1" src="Resimler/trainer1.jpg" alt="trainer">
+                    <div class="hover-info">Emily Clark - Yoga Trainer</div> <!-- hover  -->
+                </div>
+                <div class="trainer-card">
+                    <div class="top-bar"></div>
+                    <img class="trainer2" src="Resimler/trainer2.jpg" alt="trainer">
+                    <div class="hover-info">John Smith - Strength Trainer</div>
+                </div>
+                <div class="trainer-card">
+                    <div class="top-bar"></div>
+                    <img class="trainer3" src="Resimler/trainer3.jpg" alt="trainer">
+                    <div class="hover-info">Jane Done - Cardio Trainer</div>
+                    <div class="second-info"></div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+<!--purchase from us--> 
+    <section id="purchaseFromUs">
+        <div class="fifth-container" style="background-color:#fff;">
+            <h1 id="second-title">PURCHASE FROM US</h1>
+                <div class="box"></div> <!--orange line/box-->
+                    <p id="second-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempore <br>
+                        assumenda dignissimos deserunt alias fuga.</p>   
+            <div class="six-container">
+                <div class="shopping-card">
+                    <div class="shp-img">
+                        <img class="image" src="Resimler/purchase1.jpg" alt="purchase">
+                    </div>
+                    <div class="shopping-text" style="text-align: center;">
+                        Kettlebell / 5kg
+                        <br>
+                        <br>
+                        89.99$ / 59.99$
+                        <br>
+                        Add To Cart
+                    </div>
+                </div>
+                <div class="shopping-card">
+                    <div class="shp-img">
+                        <img class="image" src="Resimler/purchase2.jpg" alt="purchase">
+                    </div>
+                    <div class="shopping-text" style="text-align: center;">
+                        Treadmill
+                        <br>
+                        <br>
+                        899.99$ / 599.99$
+                        <br>
+                        Add To Cart
+                    </div>
+                </div>
+                <div class="shopping-card">
+                    <div class="shp-img">
+                        <img class="image" src="Resimler/purchase3.jpg" alt="purchase">
+                    </div>
+                    <div class="shopping-text" style="text-align: center;">
+                        Adjustable Dumbbell
+                        <br>
+                        <br>
+                        89.99$ / 59.99$
+                        <br>
+                        Add To Cart
+                    </div>
+                </div>
+                <div class="shopping-card">
+                    <div class="shp-img">
+                        <img class="image" src="Resimler/purchase4.jpg" alt="purchase">
+                    </div>
+                    <div class="shopping-text" style="text-align: center;">
+                        Kettlebell / 3kg
+                        <br>
+                        <br>
+                        89.99$ / 59.99$
+                        <br>
+                        Add To Cart
+                    </div>
+                </div>
+    
+            </div>              
+        </div>
+        
+    </section>   
+    <!--page 4-->
+    <section id="review" style="background-color: aliceblue;">
+        <div class="seven-container" style="background-color: aliceblue;">
+            <h1 id="second-title">REVIEW CLIENT</h1>
+                <div class="box"></div> <!--orange line/box- -->
+                    <p id="second-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempore <br>
+                        assumenda dignissimos deserunt alias fuga.</p>                 
+                </div>
+        <div>
+        <div class="review2" style="background-color: aliceblue;">
+            <div class="review-item">
+                <img src="Resimler/client1.jpg" alt="Diet Expert" class="review-img">
+                <h3>Diet Expert</h3> 
+                <h6>CFO</h6>
+                <div class="review-box">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum vero quia animi odio harum nesciunt maxime sit natus iure? Nesciunt voluptas expedita officia vero veritatis placeat perspiciatis in. Quasi, officia.</p>
+                </div>
+            </div>
+            <div class="review-item">
+                <img src="Resimler/client2.jpg" alt="Cardio Trainer" class="review-img"> 
+                <h3>Cardio Trainer</h3>
+                <h6>CEO</h6>
+                <div class="review-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quos sit cumque sequi voluptates fugiat enim doloribus aut, id perferendis rem saepe vel dignissimos voluptatibus non molestiae itaque amet odio.</p>
+                </div>
+            </div>
+        </div>
+    </section>  
+   
+    <section id="contact">
+    <div class="section8-container">
+        <h1 id="second-title">CONTACT US</h1>
+             <div class="box"></div> <!--orange line/box- -->
+                <p id="second-article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, tempore <br>
+                    assumenda dignissimos deserunt alias fuga.</p>                 
+    </div>
+    <div class="contact-container">
+        <div class="contact">
+            <div class="info">
+                <div class="mobile-info">
+                    <h2 class="mobile" style="  color: #555555;">Mobile Number</h2>
+                    <h4 class="mobile-number" style="margin-top: 5px; color: #555555;">+135 773 321 4442</h4> 
+                </div>
+    
+                <div class="mail-info">
+                    <h2 class="mail" style=" margin-top: 20px; color: #555555;">Email Adress</h2>
+                    <h4 class="mail-info2" style="margin-top: 5px; color: #555555;">demo@demo.com</h4>
+                </div>
+            </div>
+            <form class="form">
+                <h3 style="text-align: start; margin-top: 20px;  margin-bottom: 20px; color: #555555;">Make An Appoinment</h3>
+                <input type="text" class="name" placeholder="   Your Name" style="background-color:aliceblue; width: 100%; height: 30px; border: none;">
+                <br><br>
+                <input type="text" class="email" placeholder="   Your Email" style="background-color:aliceblue; width: 100%; height: 30px; border: none;">
+                <br><br>
+                <textarea name="message" id="message" placeholder="   Your Message" cols="51" rows="7" style="background-color:aliceblue; border: none; width: 100%; padding: 10px;"></textarea>
+            </form>
+        </div>
+        
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12046.998463026446!2d29.121615965211422!3d40.98696324165297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac8a7d44b6587%3A0x208a1d8ff0bf7e10!2zQXRhxZ9laGlyLCBBdGHFn2VoaXIgQXRhdMO8cmssIDM0NzU4IEF0YcWfZWhpci_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1728332090152!5m2!1str!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="Resimler/logo.png" alt="logo">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptatem, quod, quae, voluptas quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit distinctio ut dignissimos commodi repudiandae ratione doloremque tempora minima adipisci, assumenda sunt at facilis iure impedit ipsa id rem a aspernatur!
+            </p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-section">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3>Helpful Links</h3>
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+       
+      <!--js code for BMI Calculater -->
+      <script>
+        
+                window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            
+            // Sayfa kaydırıldığında 50 pikselin üzerine çıkıldığında .navbar-scroll sınıfını ekle
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scroll');
+            } else {
+                navbar.classList.remove('navbar-scroll');
+            }
+        });
+
+
+        /* classes function*/
+        function changeImage(imageSrc) {
+            document.getElementById('yogaimage').src = imageSrc;
+        }
+    
+
+
+function calculateBMI() {
+    const height = parseFloat(document.getElementById('height').value);
+    const weight = parseFloat(document.getElementById('weight').value);
+
+    if (isNaN(weight) || isNaN(height) || height <= 0 || weight <= 0) {
+        alert("Please enter valid height and weight values.");
+        return;
+    }
+
+    // BMI hesaplama formülü
+    const bmi = weight / ((height / 100) ** 2);
+    document.getElementById('result').textContent = `Your BMI is: ${bmi.toFixed(2)}`;
+    
+    moveArrow(bmi);
+}
+
+function moveArrow(bmi) {
+    const arrow = document.getElementById('bmi-arrow');
+     console.log("Arrow element:" , arrow);
+    // BMI değerine göre üçgenin pozisyonunu ayarlama
+    let position = 0;
+
+    if (bmi < 18.5) {
+        position = 15; // Underweight
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+        position = 40; // Normal weight
+    } else if (bmi >= 25 && bmi < 29.9) {
+        position =55; // Overweight
+    } else if (bmi >= 30 && bmi < 34.9) {
+        position = 70; // Obese
+    } else if (bmi > 35) {
+        position = 80; // Extremly Obese
+    }
+
+    // Üçgenin pozisyonunu değiştirme
+    arrow.style.display = 'block';
+    arrow.style.left = `calc(${position}% - 10px)`;
+    console.log("Arrow position set to:", arrow.style.left);
+}
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+}
+
+
+
+    </script>
+</body>
+</html
